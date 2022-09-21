@@ -8,6 +8,8 @@
 
 the `ESP-Mx DevBoard` acts as a stand-alone webserver that connects to the local network (SSID and key must be provided).
 
+blue LED indicates successful wifi connection.
+
 it listens to 5 urls:
 - `/` interface with buttons
 - `/forward` move forward
@@ -30,6 +32,7 @@ Software to edit this repo: https://platformio.org/
 
 # TODO / next stept
 
+- use hot glue to fix the servos
 - use `millis()` instead of `delay()` to enable continuous movements. Right now, the delay() stops the program so it cannot listen to requests while the servo is active. see https://randomnerdtutorials.com/interrupts-timers-esp8266-arduino-ide-nodemcu/
 - use OSC https://github.com/stahlnow/OSCLib-for-ESP8266
 
